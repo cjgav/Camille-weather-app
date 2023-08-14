@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp by Camille</title>
+    <script
+      src="https://kit.fontawesome.com/bbaff6e75c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="box">
+        <br />
+        <div class="row justify-content-md-center">
+          <div class="col-lg-6">
+            <h4></h4>
+            <br />
+            <br />
+            <form id="city-form">
+              <label for="city"></label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                required
+                placeholder="Search for a city..."
+              />
+              <button type="submit">🔍</button>
+              <button id="current-location-btn">Current Location</button>
+            </form>
+          </div>
+        </div>
+        <div class="box1">
+          <div class="weather-container">
+            <div class="row">
+              <div class="col">
+                <h1 id="result">City</h1>
+              </div>
+              <div class="col">
+                <h1><i class="fa-solid fa-cloud-sun"></i></h1>
+              </div>
+              <div class="col">
+                <h1><div id="temperature">32</div></h1>
+              </div>
+
+              <div class="col">
+                <span class="units">
+                  <a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a> </span
+                ><br />Partly cloudy<br />Humidity: 65% <br />
+                Wind: 21 km/h
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="row"><p>5 Day Forecast</p></div>
+          <div class="row">
+            <div class="col">
+              <h1><i class="fa-solid fa-cloud-sun"></i></h1>
+            </div>
+            <div class="col">
+              <h1><i class="fa-solid fa-cloud-sun"></i></h1>
+            </div>
+            <div class="col">
+              <h1><i class="fa-solid fa-cloud-sun"></i></h1>
+            </div>
+            <div class="col">
+              <h1><i class="fa-solid fa-cloud-sun"></i></h1>
+            </div>
+            <div class="col">
+              <h1><i class="fa-solid fa-cloud-sun"></i></h1>
+            </div>
+            <div class="col">
+              <h1><i class="fa-solid fa-cloud-sun"></i></h1>
+            </div>
+
+            <div class="row">
+              <div class="col">Tuesday, 18 July 2023</div>
+              <div class="col">Wednesday, 19 July 2023</div>
+              <div class="col">Thurday, 20 July 2023</div>
+              <div class="col">Friday, 21 July 2023</div>
+              <div class="col">Saturday, 22 July 2023</div>
+              <div class="col">Sunday, 23 July 2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
